@@ -1,0 +1,27 @@
+ALGORITHM Sentence Reader
+VAR
+    sentence: STRING;
+    sentLeng, wordCount, vowelCount, i: INTEGER;
+
+BEGIN
+    sentLeng, wordCount, vowelCount, i :=0;
+    Write("Please add your sentence")
+Read (sentence)
+    While Sentence [i]!="." DO
+    {
+        SentLeng= SentLeng +1;
+        if sentence[i]=" "
+        Then wordCount:= wordCount+1;
+End if
+        if Sentence[i] in {"a","o","e""u","i","y"}
+        Then vowelCount:= vowelCount+1;
+end if
+        i:= i+1;
+
+    }
+End While
+    
+    Write ("Length of the sentence: ",sentLeng);
+    Write ("Number of words: ",wordCount);
+    Write ("Number of vowels: ",vowelCount);
+END
